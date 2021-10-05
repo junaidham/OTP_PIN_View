@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/bn_tv_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        >
+
+        <TextView
+            android:id="@+id/tv_pinOne"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_number_design"
+            android:gravity="center"
+            android:hint="\u2605"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pinTwo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_number_design"
+            android:gravity="center"
+            android:hint="\u2605"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pinThree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_number_design"
+            android:gravity="center"
+            android:hint="\u2605"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pinFour"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_number_design"
+            android:gravity="center"
+            android:hint="\u2605"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pinFive"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_number_design"
+            android:gravity="center"
+            android:hint="\u2605"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pinSix"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_number_design"
+            android:gravity="center"
+            android:hint="@string/star"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/bn_btn_linear_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btn_login_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="2"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="3"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bn_btn_linear_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bn_btn_linear_one"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btn_login_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="4"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="5"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="6"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bn_btn_linear_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bn_btn_linear_two"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btn_login_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="7"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="8"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="9"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bn_btn_linear_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bn_btn_linear_three"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btn_login_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Clear"
+                    android:textAllCaps="false"
+                    android:textColor="#02535A"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_login_zero"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bn_btn_login_number_design"
+                    android:text="0"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/btn_login_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_delete_text" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/back_arrow"
+        android:layout_marginTop="@dimen/pad_24"
+        android:layout_marginStart="@dimen/pad_16"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/ic_google_logo"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/mpin_otp_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_24"
+        android:gravity="top|center"
+        android:text="@string/enter_m_pin"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/logo_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_16"
+        android:gravity="top|center"
+        android:text="Junaid Ahmad"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/mpin_otp_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/otpLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mpin_otp_tv"
+        android:layout_marginTop="@dimen/pad_24"
+        android:layout_marginStart="@dimen/pad_16"
+        android:layout_marginEnd="@dimen/pad_16"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_tv">
+
+        <EditText
+            android:id="@+id/mpin_otp_et1"
+            android:layout_width="@dimen/pad_24"
+            android:layout_height="@dimen/pad_24"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/pad_24"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:cursorVisible="false"
+            android:background="@drawable/mpin_disabled_holo_bg"
+            android:textColor="@android:color/transparent"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/mpin_otp_et2"
+            android:layout_width="@dimen/pad_24"
+            android:layout_height="@dimen/pad_24"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:layout_marginEnd="@dimen/pad_24"
+            android:maxLength="1"
+            android:cursorVisible="false"
+            android:background="@drawable/mpin_disabled_holo_bg"
+            android:textColor="@android:color/transparent"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/mpin_otp_et3"
+            android:layout_width="@dimen/pad_24"
+            android:layout_height="@dimen/pad_24"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:layout_marginEnd="@dimen/pad_24"
+            android:maxLength="1"
+            android:cursorVisible="false"
+            android:background="@drawable/mpin_disabled_holo_bg"
+            android:textColor="@android:color/transparent"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/mpin_otp_et4"
+            android:layout_width="@dimen/pad_24"
+            android:layout_height="@dimen/pad_24"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:cursorVisible="false"
+            android:background="@drawable/mpin_disabled_holo_bg"
+            android:textColor="@android:color/transparent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgot_pin_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_16"
+        android:gravity="end"
+        android:text="@string/forgot_mpin"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginEnd="@dimen/pad_24"
+        app:layout_constraintTop_toBottomOf="@+id/otpLL"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/keypad_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/pad_16"
+        android:layout_marginEnd="@dimen/pad_16"
+        android:layout_marginBottom="@dimen/pad_16"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_button_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_button_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/two"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_button_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/three"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/pad_24">
+
+            <TextView
+                android:id="@+id/tv_button_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/four"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_button_five"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/five"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_button_six"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/six"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/pad_24">
+
+            <TextView
+                android:id="@+id/tv_button_seven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/seven"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_button_eight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eight"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_button_nine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nine"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/pad_24">
+
+            <TextView
+                android:id="@+id/tv_button_zero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/tv_button_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_backspace_24"
+                android:contentDescription="@string/clear"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout >

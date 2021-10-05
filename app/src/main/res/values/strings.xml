@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pinview</string>
+
+    <string name="enter_m_pin">Enter MPIN</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="clear">Clear</string>
+    <string name="upi_mpin">UPI MPIN</string>
+    <string name="app_logo">App Logo</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="forgot_mpin">Forgot MPIN?</string>
+
+    <string name="Rs">\u20B9</string>
+    <string name="star">\u2605</string>
+    <string name="true_tick">\u2713</string>
+    <string name="blank_rect">\u25A1</string>
+    <string name="rect_bullet">\u25A0</string>
+    <string name="linear_bullet">\u25CB</string>
+    <string name="filled_bullet">\u25CF</string>
+
+
+</resources>
